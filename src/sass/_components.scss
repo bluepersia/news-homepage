@@ -1,0 +1,22 @@
+
+
+.overlay 
+{
+    background-color:$color-DarkSpaceBlueTrans;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    height: 100hvh;
+    width: 100%;
+    opacity: 0%;
+    transform: opacity 300ms;
+    pointer-events: none;
+}
+
+.overlay.open
+{
+    opacity: 100%;
+    pointer-events: all;
+}
+
+

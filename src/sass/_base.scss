@@ -1,5 +1,6 @@
 $color-AlmostWhite:#FFFDFA;
 $color-DarkSpaceBlue: #00001A;
+$color-DarkSpaceBlueTrans: hsla(240, 100%, 5%, 50%);
 $color-Gunmetal: #5E607A;
 $color-LightVermil: #F15D51;
 $color-Silver: #C5C6CE;
@@ -10,6 +11,7 @@ body {
     margin: 0;
     background-color: $color-AlmostWhite;
     font-family:  "Inter", sans-serif;
+    color: $color-DarkSpaceBlue;
 }
 p {
     line-height: 1.7;
