@@ -104,6 +104,9 @@ html {
 }
 
 @media (min-width: 768px) {
+  .header {
+    padding: 4.73em 11.4% 3.66em;
+  }
   .header__btn-menu {
     display: none;
   }
@@ -205,6 +208,7 @@ html {
 .top-post__img {
   display: block;
   width: 30%;
+  object-fit: cover;
 }
 .top-post__content {
   width: 63%;
@@ -222,6 +226,52 @@ html {
 .top-post__body {
   margin-top: 0;
   color: #5E607A;
+}
+
+@media (min-width: 768px) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(3, 31.5%);
+    grid-template-rows: auto auto auto;
+    column-gap: 2.7%;
+    padding: 0 11.4%;
+  }
+  .main__img-mobile {
+    display: none;
+  }
+  .main__img-desktop {
+    display: block;
+    width: 100%;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin-bottom: 1.8em;
+  }
+  .main__title {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .main__content {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .new {
+    grid-column: 3/-1;
+    grid-row: 1/3;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 2.1em 1.6em;
+  }
+  .top-posts {
+    grid-column: 1/-1;
+    grid-row: 3/-1;
+    display: flex;
+    flex-direction: row;
+    margin-top: 4.8em;
+  }
+  .top-post__img {
+    width: 28%;
+    height: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
