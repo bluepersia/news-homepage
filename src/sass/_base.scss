@@ -1,0 +1,27 @@
+$color-AlmostWhite:#FFFDFA;
+$color-DarkSpaceBlue: #00001A;
+$color-Gunmetal: #5E607A;
+$color-LightVermil: #F15D51;
+$color-Silver: #C5C6CE;
+$color-Yellow: #C5C6CE;
+
+
+body {
+    margin: 0;
+    background-color: $color-AlmostWhite;
+    font-family:  "Inter", sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+* :first-child{
+    margin-top: 0;
+}
+
+*:last-child 
+{
+    margin-bottom: 0;
+}
