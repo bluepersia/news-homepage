@@ -24,4 +24,82 @@ html {
   font-size: 15px;
 }
 
+.overlay {
+  background-color: hsla(240, 100%, 5%, 0.5);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100hvh;
+  width: 100%;
+  opacity: 0%;
+  transform: opacity 300ms;
+  pointer-events: none;
+}
+
+.overlay.open {
+  opacity: 100%;
+  pointer-events: all;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.86em 4.2%;
+}
+.header__logo {
+  width: 45px;
+}
+.header__btn-menu {
+  cursor: pointer;
+  transition: transform 300ms;
+}
+.header__btn-menu:hover {
+  transform: scale(1.1);
+}
+
+.nav {
+  display: none;
+}
+
+.menu-mobile {
+  background-color: #FFFDFA;
+  height: 100vh;
+  width: 68%;
+  margin-left: auto;
+  padding: 1.8em 1.33em 0em 1.6em;
+  transform: translateX(100%);
+  transition: transform 300ms;
+}
+.menu-mobile__btn-close {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 5.7em;
+  cursor: pointer;
+  transition: transform 300ms;
+}
+.menu-mobile__btn-close:hover {
+  transform: scale(1.1);
+}
+
+.overlay.open .menu-mobile {
+  transform: translateX(0%);
+}
+
+.mobile-nav__list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6em;
+}
+.mobile-nav__link {
+  text-decoration: none;
+  color: inherit;
+  transition: color;
+}
+.mobile-nav__link:hover {
+  color: #F15D51;
+}
+
 /*# sourceMappingURL=style.css.map */
