@@ -103,6 +103,31 @@ html {
   color: #F15D51;
 }
 
+@media (min-width: 768px) {
+  .header__btn-menu {
+    display: none;
+  }
+  .header__logo {
+    width: 64px;
+  }
+  .nav {
+    display: block;
+  }
+  .nav__list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: 2.66em;
+  }
+  .nav__link {
+    text-decoration: none;
+    color: #5E607A;
+    transition: color 300ms;
+  }
+  .nav__link:hover {
+    color: #F15D51;
+  }
+}
 .main {
   padding: 0 4.2% 5.3em;
 }

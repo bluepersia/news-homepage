@@ -46,7 +46,7 @@
         margin-bottom: 5.7em;
         cursor: pointer;
         transition: transform 300ms;
-        
+
         &:hover 
         {
             transform: scale(1.1);
@@ -82,4 +82,45 @@
             color: $color-LightVermil;
         }
       }
+}
+
+
+@media (min-width:768px)
+{
+    .header {
+        &__btn-menu 
+        {
+            display: none;
+        }
+
+        &__logo
+        {
+            width: 64px;
+        }
+    }
+
+    .nav 
+    {
+        display: block;
+
+        &__list 
+        {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            gap: 2.66em;
+        }
+
+        &__link 
+        {
+            text-decoration: none;
+            color:$color-Gunmetal;
+            transition: color 300ms;
+
+            &:hover
+            {
+                color: $color-LightVermil;
+            }
+        }
+    }
 }
