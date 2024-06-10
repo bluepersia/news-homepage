@@ -42,6 +42,11 @@ html {
   pointer-events: all;
 }
 
+@media (min-width: 768px) {
+  .overlay {
+    display: none;
+  }
+}
 .header {
   display: flex;
   align-items: center;
