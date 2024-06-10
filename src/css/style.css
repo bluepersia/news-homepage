@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  background-color: #FFFDFA;
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  line-height: 1.7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* :first-child {
+  margin-top: 0;
+}
+
+*:last-child {
+  margin-bottom: 0;
+}
+
+html {
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
